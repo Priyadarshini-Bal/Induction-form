@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    color: black;
+}
+
+body p{
+    color: rgb(19, 18, 18);
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+input,select,button{
+    color: rgb(126, 123, 123);
+
+}
+
+h3,h4{
+    margin: 0;
+    text-align: center;
+}
+
+:focus{
+    outline: none;
+}
+
+.wrapper{
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inner{
+    padding: 20px;
+    background:rgba(255, 255, 255, 0.938);
+    max-width: 850px;
+    border-radius: 15px;
+    margin: 50px;
+    display: flex;
+}
+
+.inner form{
+    width: 100%;
+    padding: 36px 36px 36px 20px;
+    
+
+}
+.inner h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    /*.inner p for gap if drkr add here */
+ 
+}
+
+.form-wrapper input{
+    width: 100%;
+    background: rgba(1, 3, 31, 0);
+}
+
+.form-want input{
+    width: 100%;
+    height: 50px;
+    text-align: top;
+    background: rgba(1, 3, 31, 0);
+}
+
+.form-control{
+    border: 1px solid #333;
+    border: none;
+    border-bottom: 1px solid #333;
+    display: block;
+    width: 100%;
+    background: rgba(1, 3, 31, 0);
+    height: 40px;
+    padding-right: 0;
+}
+
+button{
+    border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 250px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    
+    nav img{
+        width: 200px;
+    }
+    nav{
+        padding: 10px 10px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li::after{
+        background: none;
+    }
+    .nav-links{
+        position: absolute;
+        background: linear-gradient(rgb(21, 1, 54),rgba(253, 27, 27, 0.856));
+        height: 130vh;
+        width: 170px;
+        top: 0;
+        right: -170px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+}

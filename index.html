@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RS Induction form</title>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" class="css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/rswritten.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="wrapper">
+    <div class="inner">
+      <form>
+        <h3>Induction Form</h3>
+        <p>Intrested candidates kindly fill this form to participate in Induction process</p>
+
+        <div class="form-wrapper">
+          <input type="text" placeholder="Full Name" class="form-control">
+        </div>
+
+        <div class="form-wrapper">
+          <input type="number" placeholder="Registration no" class="form-control">
+        </div>
+
+        <div class="form-wrapper">
+          <input type="email" placeholder="Email Address" class="form-control">
+        </div>
+
+        <div class="form-wrapper">
+          <select name="" id="" class="form-control">
+            <option value="" disabled selected>Branch</option>
+            <option value="CHE">CHE</option>
+            <option value="CE">CE</option>
+            <option value="CSE">CSE</option>
+            <option value="EE">EE</option>
+            <option value="EEE">EEE</option>
+            <option value="ETC">ETC</option>
+            <option value="IT">IT</option>
+            <option value="ME">ME</option>
+            <option value="MME">MME</option>
+            <option value="PE">PE</option> 
+          </select>
+        </div>
+
+        <div class="form-wrapper">
+          <select name="" id="" class="form-control">
+            <option value="" disabled selected>Year</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+        </div>
+
+        <div class="form-wrapper">
+          <select name="" id="" class="form-control">
+            <option value="" disabled selected>Choose Domain</option>
+            <option value="Coding">Coding</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Structural">Structural</option>
+            <option value="Management">Management</option>
+
+          </select>
+        </div>
+
+        <div class="form-want">
+          <input type="text" placeholder="I want to join this club..." class="form-control">
+        </div>
+
+        <button>Submit</button>
+
+      </form>
+    </div>
+  </div>
+  </section>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-170px";
+    }
+  </script>
+</body>
+</html>
